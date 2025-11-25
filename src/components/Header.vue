@@ -7,5 +7,15 @@
       <p>Recipe index</p>
       <p>Popular</p>
     </section>
+    <section class="header__TopRight">
+      <button>
+        <!---->
+        Register
+      </button>
+      <button>
+        <!---->
+        Login
+      </button>
+    </section>
   </nav>
 </template>
