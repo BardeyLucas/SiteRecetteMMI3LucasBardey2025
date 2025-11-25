@@ -41,5 +41,18 @@
     font-size: rem(15);
     text-transform: uppercase;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+  }
+
+  .LoginIcon {
+    width: rem(20);
+    height: rem(20);
+  }
+
+  .UserIcon {
+    width: rem(20);
+    height: rem(20);
   }
 }
