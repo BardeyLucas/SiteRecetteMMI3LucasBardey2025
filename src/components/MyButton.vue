@@ -55,6 +55,7 @@ defineProps<{
       'button--large': size === 'large',
       'button--giant': size === 'giant',
       'button--disabled': state === 'disabled',
+      'button--IconOnly': content === 'IconOnly',
     }"
   >
     <div class="arrow-top"></div>
@@ -161,6 +162,10 @@ defineProps<{
   padding: $button--padding__giant;
   height: $button--height__giant;
   border-radius: $button--borderRadius__default;
+
+  &.button--IconOnly {
+    padding: $button--padding__giantIconOnly;
+  }
 }
 
 .button--large {
@@ -168,6 +173,9 @@ defineProps<{
   padding: $button--padding__large;
   height: $button--height__large;
   border-radius: $button--borderRadius__default;
+  &.button--IconOnly {
+    padding: $button--padding__largeIconOnly;
+  }
 }
 
 .button--medium {
@@ -175,6 +183,9 @@ defineProps<{
   padding: $button--padding__medium;
   height: $button--height__medium;
   border-radius: $button--borderRadius__default;
+  &.button--IconOnly {
+    padding: $button--padding__mediumIconOnly;
+  }
 }
 
 .button--small {
@@ -182,6 +193,9 @@ defineProps<{
   padding: $button--padding__small;
   height: $button--height__small;
   border-radius: $button--borderRadius__small;
+  &.button--IconOnly {
+    padding: $button--padding__smallIconOnly;
+  }
 }
 
 .button--tiny {
@@ -189,6 +203,9 @@ defineProps<{
   padding: $button--padding__tiny;
   height: $button--height__tiny;
   border-radius: $button--borderRadius__tiny;
+  &.button--IconOnly {
+    padding: $button--padding__tinyIconOnly;
+  }
 }
 .button > .arrow-left {
   background-image: $button--arrow__default !important;
@@ -208,7 +225,7 @@ defineProps<{
 .button > .arrow-top {
   background-image: $button--arrow__default !important;
   background-size: cover;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   width: rem(24);
   height: rem(24);
 }
