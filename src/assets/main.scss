@@ -1,0 +1,16 @@
+@use './base.scss' as *;
+@use './foundations/functions' as *;
+
+.header--nav {
+  display: flex;
+  gap: rem(16);
+  padding: rem(16);
+  background-color: var(--grisFonce);
+}
+
+.inventaire {
+  display: flex;
+  gap: rem(20);
+  flex-wrap: wrap;
+  margin-bottom: rem(20);
+}

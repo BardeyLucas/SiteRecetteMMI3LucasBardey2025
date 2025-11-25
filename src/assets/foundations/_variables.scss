@@ -1,0 +1,89 @@
+@use './functions' as *;
+
+$small-breakpoint: 360px;
+$medium-breakpoint: 768px;
+$large-breakpoint: 1024px;
+$column-number: 12;
+
+:root {
+  --noir: rgb(14, 14, 14);
+  --grisFonce: rgb(24, 24, 24);
+  --gris: rgb(40, 40, 40);
+  --bleu: rgb(125, 199, 255);
+  --primary50: #edeffe;
+  --primary100: #c8cefc;
+  --primary200: #aeb6fb;
+  --primary300: #8895f9;
+  --primary500: #4e61f6;
+  --primary700: #3745af;
+  --primary800: #2b3587;
+  --Grey200: #e5e7ea;
+  --Grey500: #6d717f;
+}
+
+$button--size__giant: rem(18);
+$button--size__large: rem(16);
+$button--size__medium: rem(14);
+$button--size__small: rem(12);
+$button--size__tiny: rem(10);
+
+$button--padding__giant: rem(16) rem(24);
+$button--padding__large: rem(14) rem(20);
+$button--padding__medium: rem(12) rem(16);
+$button--padding__small: rem(8) rem(12);
+$button--padding__tiny: rem(6) rem(8);
+
+$button--height__giant: rem(56);
+$button--height__large: rem(48);
+$button--height__medium: rem(40);
+$button--height__small: rem(32);
+$button--height__tiny: rem(24);
+
+$button--borderRadius__default: none;
+$button--borderRadius__small: rem(8) !important;
+$button--borderRadius__tiny: rem(8) !important;
+
+$button--color__default: white;
+$button--color__outline: var(--primary500);
+$button--color__clear: var(--primary500);
+$button--color__disabled: var(--Grey500);
+
+$button--background__default: var(--primary500);
+$button--background__default_hover: var(--primary700);
+$button--background__default_focus: var(--primary500);
+$button--background__default_active: var(--primary800);
+$button--background__default_disabled: var(--Grey200);
+$button--background__outline: white;
+$button--background__outline_hover: var(--primary50);
+$button--background__outline_focus: white;
+$button--background__outline_active: var(--primary100);
+$button--background__outline_disabled: white;
+$button--background__clear: white;
+$button--background__clear_hover: var(--primary50);
+$button--background__clear_focus: white;
+$button--background__clear_active: var(--primary100);
+$button--background__clear_disabled: white;
+
+$button--rounded__default: rem(12);
+
+$button--outline__default: none;
+$button--outline__default_focus: rem(3) solid var(--primary200);
+$button--outline__outline: rem(1.5) solid var(--primary500);
+$button--outline__outline_disabled: rem(1.5) solid var(--Grey500);
+
+$button--outlineOffset__outline: rem(-1.5);
+
+$button--boxShadow__outline: none;
+$button--boxShadow__outline_focus: 0 0 0 rem(3) var(--primary200);
+$button--boxShadow__clear: none;
+$button--boxShadow__clear_focus: 0 0 0 rem(3) var(--primary200);
+
+$button--arrow__default: url('/images/arrow_white.png');
+$button--arrow__outline: url('/images/arrow_blue.png');
+$button--arrow__clear: url('/images/arrow_blue.png');
+$button--arrow__disabled: url('/images/arrow_grey.png');
+
+$button--arrowWidth__default: rem(24);
+$button--arrowHeight__default: rem(24);
+$button--arrowWidth__tiny: rem(16);
+$button--arrowHeight__tiny: rem(16);
