@@ -208,7 +208,7 @@ defineProps<{
 .button > .arrow-top {
   background-image: $button--arrow__default !important;
   background-size: cover;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   width: rem(24);
   height: rem(24);
 }
