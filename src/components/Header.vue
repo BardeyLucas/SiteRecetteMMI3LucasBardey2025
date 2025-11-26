@@ -5,7 +5,7 @@ import User from '@/assets/user.vue'
 import ArrowDown from '@/assets/arrow-down.vue'
 </script>
 <template>
-  <header>
+  <header class="header">
     <nav class="header__top">
       <section class="header__TopLeft">
         <p>Community</p>

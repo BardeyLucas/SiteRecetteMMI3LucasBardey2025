@@ -1,7 +1,7 @@
 @use './base.scss' as *;
 @use './foundations/functions' as *;
 
-.header--nav {
+.sectionTemporaire--nav {
   display: flex;
   gap: rem(16);
   padding: rem(16);
@@ -13,6 +13,15 @@
   gap: rem(20);
   flex-wrap: wrap;
   margin-bottom: rem(20);
+}
+
+.header {
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 rem(4) rem(8) #0000000d;
+  position: absolute;
+  top: 0;
+  z-index: 100;
 }
 
 .header__top {
