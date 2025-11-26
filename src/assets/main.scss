@@ -56,3 +56,56 @@
     height: rem(20);
   }
 }
+
+.header__bottom {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: rem(20) rem(112);
+
+  & > .header__bottomLeft {
+    display: flex;
+    align-items: center;
+    height: rem(72);
+    width: auto;
+    gap: 100px;
+
+    & > .header__search {
+      display: flex;
+
+      & > .header__shearch-categories {
+        font-family: Montserrat;
+        border: none;
+        display: flex;
+      }
+
+      & > .header__inputSearch {
+        font-family: Montserrat;
+        border: none;
+      }
+
+      & > .header__buttonShearch {
+        font-family: Montserrat;
+        border: none;
+      }
+    }
+  }
+
+  & > .header__bottomRight {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+
+    & > .header__panier {
+      width: rem(52);
+      height: rem(52);
+      border: none;
+    }
+
+    & > .header__profile {
+      width: rem(52);
+      height: rem(52);
+      border: none;
+    }
+  }
+}

@@ -1,7 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import Login from '@/assets/assets/login.vue'
-import User from '@/assets/assets/user.vue'
+import Login from '@/assets/login.vue'
+import User from '@/assets/user.vue'
+import ArrowDown from '@/assets/arrow-down.vue'
 </script>
 <template>
   <header>
@@ -23,5 +24,29 @@ import User from '@/assets/assets/user.vue'
         </button>
       </section>
     </nav>
+    <section class="header__bottom">
+      <section class="header__bottomLeft">
+        <img class="header__logo" src="/images/MainLogo.png" alt="Logo" />
+        <div class="header__search">
+          <button class="header__shearch-categories">
+            <p>All Categories</p>
+            <ArrowDown class="header__ArrowDownIcon" />
+          </button>
+          <input class="header__inputSearch" type="text" placeholder="Search" />
+          <button class="header__buttonShearch">Search</button>
+        </div>
+      </section>
+      <section class="header__bottomRight">
+        <button class="header__panier">
+          ---
+          <div>
+            <p>1</p>
+          </div>
+        </button>
+        <button class="header__profile">
+          <img />
+        </button>
+      </section>
+    </section>
   </header>
 </template>
