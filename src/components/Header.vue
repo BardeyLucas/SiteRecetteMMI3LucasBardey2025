@@ -4,6 +4,7 @@ import Login from '@/assets/IconLogin.vue'
 import User from '@/assets/IconUser.vue'
 import ArrowDown from '@/assets/IconArrowDown.vue'
 import IconSearch from '@/assets/IconSearch.vue'
+import IconShoppingCart from '@/assets/IconShoppingCart.vue'
 </script>
 <template>
   <header class="header">
@@ -41,9 +42,11 @@ import IconSearch from '@/assets/IconSearch.vue'
       </section>
       <section class="header__bottomRight">
         <button class="header__panier">
-          ---
-          <div>
-            <p>1</p>
+          <div class="header__IconShoppingCart_PositionPatcher">
+            <IconShoppingCart class="header__IconShoppingCart" />
+          </div>
+          <div class="header__panier-notification">
+            <p class="header__notification-number">1</p>
           </div>
         </button>
         <button class="header__profile">
