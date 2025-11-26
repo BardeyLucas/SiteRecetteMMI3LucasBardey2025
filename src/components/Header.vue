@@ -3,6 +3,7 @@
 import Login from '@/assets/login.vue'
 import User from '@/assets/user.vue'
 import ArrowDown from '@/assets/arrow-down.vue'
+import valor from '@/views/ButtonView.vue'
 </script>
 <template>
   <header>
@@ -40,7 +41,7 @@ import ArrowDown from '@/assets/arrow-down.vue'
         <button class="header__panier">
           ---
           <div>
-            <p>1</p>
+            <p>5</p>
           </div>
         </button>
         <button class="header__profile">

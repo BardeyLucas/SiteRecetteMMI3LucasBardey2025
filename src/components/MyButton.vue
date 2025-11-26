@@ -6,6 +6,12 @@ defineProps<{
   state?: 'default' | 'disabled'
   content?: 'default' | 'PlusText' | 'IconOnly'
 }>()
+
+const emit = defineEmits(['clickAndHover'])
+
+function handleClickAndHover() {
+  emit('clickAndHover')
+}
 </script>
 
 <!-- <template>
@@ -26,6 +32,7 @@ defineProps<{
 
 <template>
   <button
+    @click="handleClickAndHover"
     v-if="content !== 'IconOnly'"
     class="button"
     :class="{
@@ -44,6 +51,7 @@ defineProps<{
     <div class="arrow-right"></div>
   </button>
   <button
+    @click="handleClickAndHover"
     v-if="content === 'IconOnly'"
     class="button"
     :class="{

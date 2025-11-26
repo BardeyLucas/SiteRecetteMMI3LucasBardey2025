@@ -15,6 +15,17 @@
   margin-bottom: rem(20);
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 rem(4) rem(8) #0000001a;
+  background-color: black;
+  z-index: 1000;
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -108,4 +119,12 @@
       border: none;
     }
   }
+}
+
+.home-nav {
+  display: flex;
+  gap: rem(16);
+  padding: rem(16);
+  background-color: var(--grisFonce);
+  margin-top: rem(160);
 }
